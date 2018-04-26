@@ -1,0 +1,47 @@
+body {
+    background: lemonchiffon;
+    padding-top: 10vh;
+    height: 200vh;
+    box-sizing: border-box;
+}
+
+.purple {
+    background: rebeccapurple;
+    padding-top: 10%;
+    box-sizing: border-box;
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+.coral {
+    background: lightcoral;
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.circle {
+    border-radius: 50%;
+    background: #bada55;
+    width: 120px;
+    height: 120px;
+    position: fixed;
+}
+
+.top {
+    top: 15px;
+}
+
+.bottom {
+    bottom: 15px;
+}
+
+.right {
+  right: 15px;
+}
+
+.left {
+  left: 15px;
+}
