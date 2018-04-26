@@ -1,19 +1,33 @@
+body{
+  background: #265BD5;
+  /* margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px; */
+  margin: 20px;
+  
+}
+
+.clipboard{
+  background: white;
+}
+
 .card {
   height: 100vh;
 }
 
 .blue-bg {
-  background: blue;
+  background: #265BD5;
 }
 
 .red-bg {
   background: firebrick;
 }
 
+/* -----------------------------BOTTOM RIGHT SOCIAL CSS----------------------------------- */
 .social {
   position: fixed;
-  bottom: 40px;
-  right: 40px;
+  bottom: 20px;
+  right: 20px;
 }
 
 .social>p{
@@ -25,10 +39,20 @@
 
 .social>p:hover {
   background: white;
+  cursor: pointer;
 }
 
+.social>p>img{
+  height: 1cm;
+  width: 1cm;
+  border-color: black;
+  border-style: solid;
+  border-radius: 50%;
+}
+
+/* ------------------TOP NAVIGATION BAR, MIDDLE------------------ */
 nav {
-  position: fixed;
+  position: absolute;
   top: 60px;
   color: white;
   width: 100%;
@@ -36,9 +60,109 @@ nav {
   justify-content: center;
 }
 
-
 nav>.inner {
   width: 500px;
   display: flex;
   justify-content: space-between
+}
+nav>.inner>p:hover{
+  color:#DCD2D2;
+  cursor: pointer;
+}
+
+/* ----------------BOTTOM-LEFT FIXED TEXT--------------------------------------- */
+.bottom-left-fixed{
+  position: fixed;
+  bottom: 130px;
+  left: -20px;
+}
+.bottom-left-fixed>p{
+  transform: rotate(270deg);
+  color: white;
+  font-size: 12px;
+}
+.bottom-left-fixed>p:hover{
+  color:red;
+  cursor: pointer;
+}
+
+/* ---------------------------TOP-LEFT ELEMENT-------------------------------- */
+
+.top-left {
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  
+}
+
+
+/* -------------------------TOP-RIGHT ELEMENT---------------------------------- */
+.top-right {
+  /* display: inline-block; */
+  background: transparent;
+  position: fixed;
+  top: 40px;
+  right: 40px;
+}
+.top-right>button{
+  border: 1px solid white;
+  color: white;
+  background: transparent;
+  padding: 15px;
+  border-radius: 100em;
+}
+.top-right>button:hover {
+  background: white;
+  color: #265BD5;
+  cursor: pointer;
+}
+
+/* --------------------------INTRO ------------------------ */
+.intro-content{
+  padding-top: 200px;
+  padding-left: 120px;
+  padding-right: 120px;
+  text-align: center;
+  color: white;
+  font-family:sans-serif;
+}
+.intro-content>h1{
+  font-size: 56px;
+  font-weight: bold;
+}
+.intro-content>p{
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+.explore-button {
+  background: white;
+  color: #265BD5;
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 100em;
+}
+.explore-button:hover {
+  background: #265BD5;
+  color: white;
+  cursor: pointer;
+}
+
+/* ---------------------SCROLL AREA--------------------------- */
+.scroll-area{
+  text-align: center;
+  padding: 10px;
+
+}
+.little-line{
+  height: 50px;
+  width: 0.2px;
+  margin: 0 auto 22px;
+  border-left: 1px solid white;
+  top: 50px;
+  left: 250px;
+}
+.scroll-area>p{
+  color:white;
 }
